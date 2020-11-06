@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 1.2f;
     public Rigidbody2D rb;
     Vector2 movement;
 
     void Update()
     {
-        movement.x = Input.GetAxis("Horizontal") * speed;
-        movement.y = Input.GetAxis("Vertical") * speed;
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
+        Debug.Log(speed);
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 	
 }
