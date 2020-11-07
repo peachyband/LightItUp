@@ -16,6 +16,6 @@ public class LookAtMouse : MonoBehaviour
         transform.rotation = targetRotation;
 
         // rotate 90 degrees around the Z axis to point X axis instead of Y
-        transform.Rotate(0, 0, 90);
+        transform.Rotate(0, 0, 0);
     }
 }
