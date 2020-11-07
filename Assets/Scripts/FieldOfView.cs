@@ -79,7 +79,6 @@ public class FieldOfView : MonoBehaviour
 
 
         }
-
         int vertexCount = viewPoints.Count + 1;
         Vector3[] vertices = new Vector3[vertexCount];
         int[] triangles = new int[(vertexCount - 2) * 3];
@@ -87,8 +86,7 @@ public class FieldOfView : MonoBehaviour
         vertices[0] = Vector3.zero;
         for(int i = 0; i < vertexCount - 1; i++)
         {
-            vertices[i++] = transform.InverseTransformPoint(viewPoints[i]);
-            
+            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
             if(i < vertexCount - 2) {
                 triangles[i * 3] = 0;
                 triangles[i * 3 + 1] = i + 1;
@@ -96,10 +94,10 @@ public class FieldOfView : MonoBehaviour
             }
         }
 
-        //viewMesh.Clear();
-        //viewMesh.vertices = vertices;
-        //viewMesh.triangles = triangles;
-        //viewMesh.RecalculateNormals();
+        viewMesh.Clear();
+        viewMesh.vertices = vertices;
+        viewMesh.triangles = triangles;
+        viewMesh.RecalculateNormals();
     }
 
     ViewCastInfo ViewCast(float globalAngle)
