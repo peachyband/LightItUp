@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
-        Debug.Log(speed);
     }
 
     private void FixedUpdate()

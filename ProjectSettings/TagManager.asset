@@ -4,10 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - door_x
+  - door_y
   - door_l
+  - door_d
   - door_r
   - door_up
-  - door_d
   layers:
   - Default
   - TransparentFX
