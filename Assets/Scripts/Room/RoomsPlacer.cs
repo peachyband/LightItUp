@@ -15,7 +15,6 @@ public class RoomsPlacer : MonoBehaviour
         spawnedRooms = new Room[11, 11]; // Стартовый размер уровня
         spawnedRooms[5, 5] = StartingRoom; // В центре уровня генериться стартовая комната
         //которую можно сдвинуть куда угодно
-
         for (int i = 0; i < 12; i++) // Генерим 12 комнат
         {
             // Это вот просто убрать чтобы подземелье генерировалось мгновенно на старте
@@ -57,7 +56,7 @@ public class RoomsPlacer : MonoBehaviour
 
             if (ConnectToSomething(newRoom, position))
             {
-                newRoom.transform.position = new Vector3(position.x - 5, 0, position.y - 5) * 20;
+                newRoom.transform.position = new Vector3((position.x - 5) * 20, (position.y - 5) * 12, 0) ;
                 spawnedRooms[position.x, position.y] = newRoom;
                 return;
             }

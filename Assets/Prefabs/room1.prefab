@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5605181920111752250}
   - component: {fileID: 5761403265712373329}
   m_Layer: 0
-  m_Name: door1 (1)
-  m_TagString: door_r
+  m_Name: door2
+  m_TagString: door_l
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 1293347539467748439}
   - component: {fileID: 6980559379605171360}
   m_Layer: 0
-  m_Name: door1 (3)
-  m_TagString: door_r
+  m_Name: door4
+  m_TagString: door_d
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -393,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3450723542200190533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8210596, y: -0.13641015, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3450723541360941756}
@@ -450,10 +450,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb5c7de20a4a428d82f6bdb44445182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorU: {fileID: 0}
-  DoorR: {fileID: 0}
-  DoorD: {fileID: 0}
-  DoorL: {fileID: 0}
+  DoorU: {fileID: 3863296872367067300}
+  DoorR: {fileID: 3450723541360941728}
+  DoorD: {fileID: 2786387545016076370}
+  DoorL: {fileID: 2007134118463199167}
   BlockMeshes: []
 --- !u!212 &932976388872353320
 SpriteRenderer:
@@ -519,8 +519,8 @@ GameObject:
   - component: {fileID: 7895175541616351053}
   - component: {fileID: 4207916118263665413}
   m_Layer: 0
-  m_Name: door1 (2)
-  m_TagString: door_r
+  m_Name: door3
+  m_TagString: door_up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
