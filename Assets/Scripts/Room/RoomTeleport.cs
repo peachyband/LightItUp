@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class RoomTeleport : MonoBehaviour
 {
+    [HideInInspector]
     public Vector2 coordinateNextRoom;
+    [HideInInspector]
     public Room selfRoom;
-
+    [HideInInspector]
     public RoomManager _manager;
     private void Start()
     {

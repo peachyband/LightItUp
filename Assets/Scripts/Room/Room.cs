@@ -5,6 +5,7 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     public bool isRoomClosed = false; //TODO: chnge on True
+    [HideInInspector]
     public Vector2 position;
 
     public RoomTeleport leftTeleport, rightTeleport, upTeleport, downTeleport;
