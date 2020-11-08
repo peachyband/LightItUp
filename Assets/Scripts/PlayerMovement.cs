@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator anim;
 
+    private bool isPaused = false;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -24,6 +26,40 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
         else anim.SetBool("isWalking", true);
+<<<<<<< Updated upstream
+=======
+        HealthCheck();
+        if(activatedlamps >= 6)
+        {
+            scnctrl.GetComponent<SceneChanger>().ChangeScene("Win");
+        }
+        PauseEnter();
+        MenuEnter();
+    }
+
+    void MenuEnter()
+    {
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            scnctrl.GetComponent<SceneChanger>().ChangeScene("MainMenu");
+        }
+    }
+
+    void PauseEnter()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (!isPaused)
+            {
+                Time.timeScale = 0;
+                isPaused = true;
+            }
+            else if (isPaused)
+            {
+                Time.timeScale = 1;
+                isPaused = false;
+            }
+        }
+>>>>>>> Stashed changes
     }
 
 
