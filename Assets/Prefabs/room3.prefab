@@ -525,6 +525,8 @@ MonoBehaviour:
   - {fileID: 1078296550}
   - {fileID: 92281080}
   roomlight: {fileID: 9069253019580696521}
+  doorctrl: {fileID: 1296542425695233647}
+  player: {fileID: 0}
 --- !u!1 &84310218480954753
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +661,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49722
+  m_InstanceId: 97688
 --- !u!61 &236555386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -820,7 +822,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49726
+  m_InstanceId: 97692
 --- !u!61 &30684705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -859,6 +861,7 @@ GameObject:
   - component: {fileID: 4974639320499577387}
   - component: {fileID: 5761403265712373329}
   - component: {fileID: 5057247366456676974}
+  - component: {fileID: 2389137793698822125}
   - component: {fileID: 7690272623577783876}
   m_Layer: 0
   m_Name: door2
@@ -973,6 +976,22 @@ MonoBehaviour:
   coordinateNextRoom: {x: 0, y: 0}
   selfRoom: {fileID: 0}
   _manager: {fileID: 0}
+--- !u!114 &2389137793698822125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007134118463199167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 5761403265712373329}
+  closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
+  openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!114 &7690272623577783876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +1029,7 @@ MonoBehaviour:
   - {x: -1.0826904, y: 0.26650688, z: -0.0000003799796}
   m_ShapePathHash: -1396048035
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49782
+  m_InstanceId: 97758
 --- !u!1 &2786387545016076370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1042,7 @@ GameObject:
   - component: {fileID: 4843287875106296709}
   - component: {fileID: 6980559379605171360}
   - component: {fileID: 5524257366311504983}
+  - component: {fileID: 7906281547595521256}
   - component: {fileID: 7944574611513193394}
   m_Layer: 0
   m_Name: door4
@@ -1137,6 +1157,22 @@ MonoBehaviour:
   coordinateNextRoom: {x: 0, y: 0}
   selfRoom: {fileID: 0}
   _manager: {fileID: 0}
+--- !u!114 &7906281547595521256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786387545016076370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 5761403265712373329}
+  closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
+  openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!114 &7944574611513193394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,7 +1210,7 @@ MonoBehaviour:
   - {x: -1.0543056, y: -0.24249528, z: -0.0000003799796}
   m_ShapePathHash: 1702513882
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49786
+  m_InstanceId: 97764
 --- !u!1 &3450723541360941728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1222,7 @@ GameObject:
   - component: {fileID: 3450723541360941756}
   - component: {fileID: 3450723541360941731}
   - component: {fileID: 997160335520643527}
+  - component: {fileID: 8547984863953880556}
   - component: {fileID: 548676860942548363}
   - component: {fileID: 7841384020604119490}
   m_Layer: 0
@@ -1250,6 +1287,22 @@ MonoBehaviour:
   coordinateNextRoom: {x: 0, y: 0}
   selfRoom: {fileID: 0}
   _manager: {fileID: 0}
+--- !u!114 &8547984863953880556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450723541360941728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 5761403265712373329}
+  closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
+  openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!212 &548676860942548363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1335,7 +1388,7 @@ MonoBehaviour:
   - {x: -0.99721116, y: 0.19352597, z: -0.0000003799796}
   m_ShapePathHash: -1372145668
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49784
+  m_InstanceId: 97760
 --- !u!1 &3450723542200190533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb5c7de20a4a428d82f6bdb44445182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRoomClosed: 0
+  isRoomClosed: 1
   position: {x: 0, y: 0}
   leftTeleport: {fileID: 997160335520643527}
   rightTeleport: {fileID: 5057247366456676974}
@@ -1462,6 +1515,7 @@ GameObject:
   - component: {fileID: 1573548737893083155}
   - component: {fileID: 4207916118263665413}
   - component: {fileID: 5368355395044130143}
+  - component: {fileID: 4243810329020085719}
   - component: {fileID: 878677568050466502}
   m_Layer: 0
   m_Name: door3
@@ -1576,6 +1630,22 @@ MonoBehaviour:
   coordinateNextRoom: {x: 0, y: 0}
   selfRoom: {fileID: 0}
   _manager: {fileID: 0}
+--- !u!114 &4243810329020085719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863296872367067300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 5761403265712373329}
+  closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
+  openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!114 &878677568050466502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,7 +1684,7 @@ MonoBehaviour:
   - {x: -1.0837554, y: 0.31173232, z: -0.0000003799796}
   m_ShapePathHash: -1703166968
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49710
+  m_InstanceId: 97676
 --- !u!1 &4114799334841001051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1819,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 49772
+  m_InstanceId: 97748
 --- !u!61 &390413221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1939,6 +2009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4323518346275125590}
   - component: {fileID: 8643077367180894570}
+  - component: {fileID: 1217326044477959989}
   m_Layer: 0
   m_Name: roomLighting
   m_TagString: Untagged
@@ -2001,6 +2072,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1217326044477959989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069253019580696521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77379cd43e70c0646b9f7462ede3cf76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorctrl: {fileID: 1296542425695233647}
 --- !u!1001 &2355773679826539477
 PrefabInstance:
   m_ObjectHideFlags: 0

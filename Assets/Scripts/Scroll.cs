@@ -16,14 +16,11 @@ public class Scroll : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && i < 3)
         {
             sprtctrl.sprite = sprites[i];
             i++;
         }
-        if (i == 3)
-        {
-           scnctr.ChangeScene("MainScene");
-        }
+        else if (i >= 3) scnctr.GetComponent<SceneChanger>().ChangeScene("MainScene");
     }
 }

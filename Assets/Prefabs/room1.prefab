@@ -322,7 +322,7 @@ MonoBehaviour:
   - {x: -1.0826904, y: 0.26650688, z: -0.0000003799796}
   m_ShapePathHash: -1396048035
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62362
+  m_InstanceId: 96718
 --- !u!114 &5838523000986041488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorctrl: {fileID: 0}
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 5761403265712373329}
   closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
   openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!1 &2786387545016076370
@@ -502,7 +503,7 @@ MonoBehaviour:
   - {x: -1.0543056, y: -0.24249528, z: -0.0000003799796}
   m_ShapePathHash: 1702513882
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62366
+  m_InstanceId: 96722
 --- !u!114 &5140626128536769724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +516,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorctrl: {fileID: 0}
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 6980559379605171360}
   closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
   openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!1 &3450723541360941728
@@ -679,7 +681,7 @@ MonoBehaviour:
   - {x: -0.99721116, y: 0.19352597, z: -0.0000003799796}
   m_ShapePathHash: -1372145668
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62364
+  m_InstanceId: 96720
 --- !u!114 &6295229652622727845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 548676860942548363}
   closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
   openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!1 &3450723542200190533
@@ -803,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb5c7de20a4a428d82f6bdb44445182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRoomClosed: 0
+  isRoomClosed: 1
   position: {x: 0, y: 0}
   leftTeleport: {fileID: 997160335520643527}
   rightTeleport: {fileID: 5057247366456676974}
@@ -974,7 +977,7 @@ MonoBehaviour:
   - {x: -1.0837554, y: 0.31173232, z: -0.0000003799796}
   m_ShapePathHash: -1703166968
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62230
+  m_InstanceId: 96586
 --- !u!114 &8136639457781193392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,7 +990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36c5c355aa941543a413be370c2a6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorctrl: {fileID: 0}
+  doorctrl: {fileID: 1296542425695233647}
+  sprtctrl: {fileID: 4207916118263665413}
   closeddoor: {fileID: 21300000, guid: 3002e5ac65ec632409d9054652456490, type: 3}
   openeddoor: {fileID: 21300000, guid: b2cd8d724e1e3b14e88bc361c1f4817a, type: 3}
 --- !u!1 &3965685696500450600
@@ -1124,7 +1128,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62350
+  m_InstanceId: 96706
 --- !u!61 &461970432916471799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1443,7 +1447,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62306
+  m_InstanceId: 96662
 --- !u!61 &988198135637428573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1604,7 +1608,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62310
+  m_InstanceId: 96666
 --- !u!61 &428609043710811621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1765,7 +1769,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62304
+  m_InstanceId: 96660
 --- !u!61 &7985518877509564794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2002,6 +2006,7 @@ MonoBehaviour:
   - {fileID: 6415675704687670535}
   roomlight: {fileID: 9069253019580696521}
   doorctrl: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &8329222526496514418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,6 +2170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4323518346275125590}
   - component: {fileID: 8643077367180894570}
+  - component: {fileID: 1850233771975912157}
   m_Layer: 0
   m_Name: roomLightning
   m_TagString: Untagged
@@ -2227,6 +2233,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1850233771975912157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069253019580696521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77379cd43e70c0646b9f7462ede3cf76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorctrl: {fileID: 1296542425695233647}
 --- !u!1001 &4618776576158794745
 PrefabInstance:
   m_ObjectHideFlags: 0

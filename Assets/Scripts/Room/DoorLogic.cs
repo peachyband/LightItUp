@@ -5,22 +5,16 @@ using UnityEngine;
 public class DoorLogic : MonoBehaviour
 {
     public Room doorctrl;
-    private SpriteRenderer sprtctrl;
+    public SpriteRenderer sprtctrl;
     public Sprite closeddoor;
     public Sprite openeddoor;
 
-    private void Start()
-    {
-        doorctrl = gameObject.GetComponent<Room>();
-        sprtctrl = gameObject.GetComponent<SpriteRenderer>();
-    }
-
     void Update()
     {
-        if (doorctrl.isRoomClosed)
+        if (doorctrl.GetComponent<Room>().isRoomClosed)
         {
-            sprtctrl.sprite = closeddoor;
+            sprtctrl.GetComponent<SpriteRenderer>().sprite = closeddoor;
         }
-        else sprtctrl.sprite = openeddoor;
+        else sprtctrl.GetComponent<SpriteRenderer>().sprite = openeddoor;
     }
 }
