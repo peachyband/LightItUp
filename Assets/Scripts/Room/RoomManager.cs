@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RoomManager : MonoBehaviour
 {
     public Room[] roomsPrefabs;
 
-    public int roomsCount = 10;
+    public int roomsCount = 0;
 
     private Dictionary<Vector2, Room> _existRoom = new Dictionary<Vector2, Room>();
 
@@ -57,7 +58,8 @@ public class RoomManager : MonoBehaviour
 
     private Room GetRandomRoom()
     {
-        return roomsPrefabs[0]; //TODO: Get random value from array
+        int randnum = Random.Range(0, roomsCount - 1);
+        return roomsPrefabs[randnum]; //TODO: Get random value from array
     }
 
     private void AddRoom()
