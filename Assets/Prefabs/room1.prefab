@@ -134,7 +134,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: -238968
+  m_InstanceId: 18384
 --- !u!61 &236555386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256095801688763356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 3450723542200190535}
@@ -295,7 +295,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: -238538
+  m_InstanceId: 18388
 --- !u!61 &30684705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -485,7 +485,7 @@ MonoBehaviour:
   - {x: -1.0826904, y: 0.26650688, z: -0.0000003799796}
   m_ShapePathHash: -1396048035
   m_Mesh: {fileID: 0}
-  m_InstanceId: -235358
+  m_InstanceId: 18444
 --- !u!1 &2786387545016076370
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
   - {x: -1.0543056, y: -0.24249528, z: -0.0000003799796}
   m_ShapePathHash: 1702513882
   m_Mesh: {fileID: 0}
-  m_InstanceId: -235356
+  m_InstanceId: 18448
 --- !u!1 &3450723541360941728
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
   - {x: -0.99721116, y: 0.19352597, z: -0.0000003799796}
   m_ShapePathHash: -1372145668
   m_Mesh: {fileID: 0}
-  m_InstanceId: -235354
+  m_InstanceId: 18446
 --- !u!1 &3450723542200190533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   - {x: -1.0837554, y: 0.31173232, z: -0.0000003799796}
   m_ShapePathHash: -1703166968
   m_Mesh: {fileID: 0}
-  m_InstanceId: -235360
+  m_InstanceId: 18372
 --- !u!1 &4114799334841001051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   - {x: -1.7348104, y: -1.1260669, z: 0}
   m_ShapePathHash: 1192760007
   m_Mesh: {fileID: 0}
-  m_InstanceId: -238890
+  m_InstanceId: 18434
 --- !u!61 &390413221
 BoxCollider2D:
   m_ObjectHideFlags: 0
