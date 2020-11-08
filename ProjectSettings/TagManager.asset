@@ -7,7 +7,7 @@ TagManager:
   - door_x
   - door_y
   - RoomManager
-  - ememy
+  - Enemy
   layers:
   - Default
   - TransparentFX

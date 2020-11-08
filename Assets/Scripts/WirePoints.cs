@@ -6,9 +6,11 @@ public class WirePoints : MonoBehaviour
 {
     public Point[] points = new Point[3];
     public GameObject roomlight;
+    public Room doorctrl;
 
     void Start()
     {
+        doorctrl = gameObject.GetComponent<Room>();
         points[0].SetBeing(true);
     }
 
@@ -20,6 +22,7 @@ public class WirePoints : MonoBehaviour
         if(points[0].GetChecked() && points[1].GetChecked() && points[2].GetChecked())
         {
             roomlight.SetActive(true);
+            doorctrl.isRoomClosed = false;
         }
     }
 }

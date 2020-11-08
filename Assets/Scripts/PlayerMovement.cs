@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float health;
+    public float health = 10;
     public float speed = 1.2f;
     public Rigidbody2D rb;
     Vector2 movement;
@@ -25,8 +25,21 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
         else anim.SetBool("isWalking", true);
+        HealthCheck();
     }
 
+    public void SetHealth(float hp)
+    {
+        health += hp;
+    }
+
+    void HealthCheck()
+    {
+        if (health < 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     private void FixedUpdate()
     {
