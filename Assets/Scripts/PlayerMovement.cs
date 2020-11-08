@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public int activatedlamps = 0;
     public float health = 10;
     public float speed = 1.2f;
     public Rigidbody2D rb;
     Vector2 movement;
-
+    public GameObject scnctrl;
+    
     private Animator anim;
+
+    public void SetLamp(){ Debug.Log("+1"); activatedlamps += 1;}
 
     private void Start()
     {
@@ -26,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else anim.SetBool("isWalking", true);
         HealthCheck();
+        if(activatedlamps >= 6)
+        {
+            scnctrl.GetComponent<SceneChanger>().ChangeScene("Win");
+        }
     }
 
     public void SetHealth(float hp)
@@ -37,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (health < 0)
         {
-            Destroy(this.gameObject);
+            scnctrl.GetComponent<SceneChanger>().ChangeScene("Lose");
         }
     }
 

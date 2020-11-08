@@ -17,8 +17,11 @@ public class RoomTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (selfRoom.isRoomClosed) return;
-        _manager.ChangeRoom(coordinateNextRoom);
+        if (other.transform.tag == "Player")
+        {
+            if (selfRoom.isRoomClosed) return;
+            _manager.ChangeRoom(coordinateNextRoom);
+        }
     }
 
 }

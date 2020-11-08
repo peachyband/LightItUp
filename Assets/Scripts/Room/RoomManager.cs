@@ -58,7 +58,7 @@ public class RoomManager : MonoBehaviour
 
     private Room GetRandomRoom()
     {
-        int randnum = Random.Range(0, roomsCount - 1);
+        int randnum = Random.Range(0, 2);
         return roomsPrefabs[randnum]; //TODO: Get random value from array
     }
 
